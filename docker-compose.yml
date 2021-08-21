@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mikanos:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    tty: true
+    stdin_open: true
+    ports:
+      - "6080:6080"
+    volumes:
+      - ./chapters:/usr/chapters
