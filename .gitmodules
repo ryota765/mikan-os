@@ -2,3 +2,9 @@
 	path = chapters/1/osbook
 	url = https://github.com/karaage0703/mikanos-build
 	branch = karaage
+[submodule "chapters/chapters/2/edk2"]
+	path = chapters/chapters/2/edk2
+	url = https://github.com/tianocore/edk2.git
+[submodule "chapters/2/edk2"]
+	path = chapters/2/edk2
+	url = https://github.com/tianocore/edk2.git
