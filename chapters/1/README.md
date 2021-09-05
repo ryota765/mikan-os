@@ -52,8 +52,8 @@ Could not initialize SDL(No available video device) - exiting
 ```
 
 - USBを使う方針
+dfコマンドでUSBの名前が確認できる  
 
-dfコマンドでUSBの名前が確認できる
 ```
 $ df
 
