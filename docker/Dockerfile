@@ -7,19 +7,20 @@ WORKDIR $APP_ROOT
 
 RUN apt-get update
 RUN apt-get install -y  vim \
+                        sudo \
                         build-essential \
                         python3 \
                         git \
-                        okteta
-                        # tmux \
-                        # dosfstools
+                        tmux \
+                        dosfstools
+                        # okteta \
 
 # https://github.com/uchan-nos/mikanos-build
-# RUN cd $HOME; \
-#     git clone https://github.com/uchan-nos/mikanos-build.git osbook; \
-#     apt install -y ansible; \
-#     cd $HOME/osbook/devenv; \
-#     ansible-playbook -K -i ansible_inventory ansible_provision.yml
+RUN cd $HOME; \
+    git clone https://github.com/uchan-nos/mikanos-build.git osbook; \
+    apt install -y ansible; \
+    cd $HOME/osbook/devenv; \
+    ansible-playbook -K -i ansible_inventory ansible_provision.yml
 
 CMD ["/bin/bash"]
 
